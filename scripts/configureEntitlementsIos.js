@@ -24,7 +24,7 @@ module.exports = function (ctx) {
 
     var fs = require('fs');
     var path = require('path');
-    var xcode = ctx.requireCordovaModule('xcode');
+    var xcode = require('xcode');
 
     var deferral = new require('q').defer();
 
