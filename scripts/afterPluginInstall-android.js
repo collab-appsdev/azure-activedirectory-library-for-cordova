@@ -4,7 +4,7 @@
 
 module.exports = function (ctx) {
     var shell = ctx.requireCordovaModule('shelljs');
-    var path = ctx.requireCordovaModule('path');
+    var path = require('path');
     var configFile = path.resolve(ctx.opts.projectRoot, 'config.xml');
 
     // check if minSdkReference is already set

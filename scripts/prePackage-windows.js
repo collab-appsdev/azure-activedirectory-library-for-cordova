@@ -4,8 +4,8 @@
 
 module.exports = function (ctx) {
     var shell = ctx.requireCordovaModule('shelljs');
-    var path = ctx.requireCordovaModule('path');
-    var fs = ctx.requireCordovaModule('fs');
+    var path = require('path');
+    var fs = require('fs');
     var helperPluginId = 'cordova-plugin-ms-adal-sso';
 
     // Read config.xml -> extract adal-use-corporate-network variable value; default it to false
