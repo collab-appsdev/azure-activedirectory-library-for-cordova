@@ -22,11 +22,11 @@ module.exports = function (ctx) {
         return;
     };
 
-    var fs = ctx.requireCordovaModule('fs');
-    var path = ctx.requireCordovaModule('path');
+    var fs = require('fs');
+    var path = require('path');
     var xcode = ctx.requireCordovaModule('xcode');
 
-    var deferral = new ctx.requireCordovaModule('q').defer();
+    var deferral = new require('q').defer();
 
     var platformRoot = path.join(ctx.opts.projectRoot, 'platforms', 'ios');
 
